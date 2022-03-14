@@ -39,10 +39,14 @@ export class TrainingService {
     this.exercises.push({...this.runningExercise,
       date: new Date(),
       duration: this.runningExercise.duration * (progress / 100),
-      calories: this.runningExercise.duration * (progress / 100),
+      calories: this.runningExercise.calories * (progress / 100),
       state: 'completed'});
     this.runningExercise = null;
     this.changeExercise.next(null);
 
+  }
+
+  getCompletedExercises(){
+    return this.exercises.slice()
   }
 }
