@@ -1,0 +1,14 @@
+{
+  "targets": {
+    "angular-fitness-tracker-79a75": {
+      "hosting": {
+        "fitness-tracker-app": [
+          "angular-fitness-tracker-79a75"
+        ]
+      }
+    }
+  },
+  "projects": {
+    "default": "angular-fitness-tracker-79a75"
+  }
+}
