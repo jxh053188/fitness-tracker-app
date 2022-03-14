@@ -1,0 +1,13 @@
+mat-form-field {
+  width: 250px;
+}
+
+section {
+  height: 100%;
+}
+
+.login-card {
+  width: 400px;
+  margin: 40px;
+  height: 30%;
+}
