@@ -3,11 +3,12 @@ a {
   color: white;
 }
 
-a:hover, a:active {
-  color:blueviolet;
+a:hover,
+a:active {
+  color: blueviolet;
 }
 
-.nav-items{
+.nav-items {
   list-style: none;
   padding: 0;
   margin: 0;

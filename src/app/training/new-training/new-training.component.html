@@ -8,12 +8,23 @@
         <mat-form-field>
           <mat-label>Select a workout: </mat-label>
           <mat-select ngModel name="exercise" required>
-            <mat-option *ngFor="let exercise of exercises" [value]="exercise.id">{{exercise.name}}</mat-option>
+            <mat-option
+              *ngFor="let exercise of exercises"
+              [value]="exercise.id"
+              >{{ exercise.name }}</mat-option
+            >
           </mat-select>
         </mat-form-field>
       </mat-card-content>
       <mat-card-actions fxLayoutAlign="center">
-        <button type="submit" color="accent" mat-raised-button [disabled]="f.invalid">Start</button>
+        <button
+          type="submit"
+          color="accent"
+          mat-raised-button
+          [disabled]="f.invalid"
+        >
+          Start
+        </button>
       </mat-card-actions>
     </mat-card>
   </form>
