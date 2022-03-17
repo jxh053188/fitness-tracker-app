@@ -58,9 +58,11 @@
         color="primary"
         id="submit-btn"
         [disabled]="f.invalid"
+        *ngIf="!isLoading"
       >
         Submit
       </button>
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
     </form>
   </mat-card>
 </section>

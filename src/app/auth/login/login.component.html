@@ -33,9 +33,11 @@
         mat-raised-button
         color="accent"
         [disabled]="loginForm.invalid"
+        *ngIf="!isLoading"
       >
         Submit
       </button>
+      <mat-spinner *ngIf="isLoading"></mat-spinner>
     </form>
   </mat-card>
 </section>
